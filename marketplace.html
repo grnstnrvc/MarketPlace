@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Market Place</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Market Place</h1>
+  <div class="products">
+    <h2>Available Products:</h2>
+    <ul>
+      <li><span class="product-name">Apple</span><span class="product-price">$0.99</span></li>
+      <li><span class="product-name">Banana</span><span class="product-price">$0.49</span></li>
+      <li><span class="product-name">Orange</span><span class="product-price">$0.79</span></li>
+      <li><span class="product-name">Mango</span><span class="product-price">$1.49</span></li>
+      <li><span class="product-name">Pineapple</span><span class="product-price">$2.99</span></li>
+    </ul>
+  </div>
+  <div class="purchase">
+    <h2>Make a Purchase:</h2>
+    <form>
+      <label for="product-select">Product:</label>
+      <select id="product-select" name="product">
+        <option value="0">Apple - $0.99</option>
+        <option value="1">Banana - $0.49</option>
+        <option value="2">Orange - $0.79</option>
+        <option value="3">Mango - $1.49</option>
+        <option value="4">Pineapple - $2.99</option>
+      </select>
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" value="1">
+      <label for="payment-select">Payment Method:</label>
+      <select id="payment-select" name="payment">
+        <option value="cash">Cash</option>
+        <option value="credit-card">Credit Card</option>
+        <option value="debit-card">Debit Card</option>
+      </select>
+      <button type="submit">Purchase</button>
+    </form>
+  </div>
+  <div class="payment">
+    <h2>Payment:</h2>
+    <p id="payment-result"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
