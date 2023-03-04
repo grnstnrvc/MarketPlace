@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border-style: double;
+
 }
 
 /* base styles */
@@ -12,7 +14,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: solid;
 }
 
 .container {
@@ -28,7 +30,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 0;
+  padding: 14px 0;
   margin-bottom: 20px;
   border-bottom: 2px solid #ddd;
 }
@@ -79,7 +81,7 @@ a {
 }
 
 .product-price {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   color: #333;
   margin: 10px 0;
@@ -119,7 +121,7 @@ a {
   width: 50px;
   height: 50px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius:6px;
 }
 
 .cart-item-name {
